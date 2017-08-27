@@ -1,9 +1,52 @@
-<navbar></navbar>
-<header>
-  <hero></hero>
-</header>
-<main>
-  <div>
-    <h1>Found in {{ $ctrl.name }}.html</h1>
-  </div>
-</main>
+<div layout-gt-md="row">
+  <panel-widget flex title="Site visitors" class="fixed-height-widget">
+    <md-card ng-href="/pokedex">
+      <img ng-src="https://maxcdn.icons8.com/Share/icon/Gaming//pokedex1600.png" class="md-card-image" alt="Pokedex">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">Pokedex</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-content>
+        <p></p>
+      </md-card-content>
+    </md-card>
+  </panel-widget>
+  <panel-widget flex title="Warnings" class="fixed-height-widget">
+    <md-card>
+      <img ng-src="https://s-media-cache-ak0.pinimg.com/736x/13/87/62/138762dabb6a9d439760a52afe9b9875.jpg" class="md-card-image" alt="Pokedex">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">Evolution chain</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-content>
+        <p></p>
+      </md-card-content>
+    </md-card>
+  </panel-widget>
+  <panel-widget flex title="Memory load" class="fixed-height-widget">
+    <md-card>
+      <img ng-src="https://maxcdn.icons8.com/Share/icon/Gaming//pokemon1600.png" class="md-card-image" alt="Pokedex">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">Move</span>
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-content>
+        <p></p>
+      </md-card-content>
+    </md-card>
+  </panel-widget>
+</div>
+
+<div layout-gt-md="row">
+  <panel-widget flex title="Server Control Panel" class="fixed-height-widget"></panel-widget>
+  <panel-widget flex title="Usage Stats" class="fixed-height-widget"></panel-widget>
+  <panel-widget flex title="Autocomplete Input" options="true" class="fixed-height-widget"></panel-widget>
+</div>
+
+<div layout-gt-md="row">
+  <panel-widget flex title="Performance" options="true"></panel-widget>
+  <panel-widget flex title="TODO list"></panel-widget>
+</div>

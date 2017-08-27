@@ -1,4 +1,10 @@
 <!-- Place all UI elements intended to be present across all routes in this file -->
-<div class="app">
-  <div ui-view></div>
+<div class="app" layout="row" layout-fill>
+  <navbar></navbar>
+  <div layout="column" flex>
+    <md-content flex class="md-padding page-content flex">
+      <div ui-view></div>
+    </md-content>
+
+  </div>
 </div>
